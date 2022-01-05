@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYSEFT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Pushster&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/css.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+</head>
+<body>
+    <div class="main">
+        <div class="row wrap">
+            <div class="colum">
+                <div class="logo">
+                    <img src="./img/logo.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="https://www.facebook.com/profile.php?id=100018001596603">Nguyên Thắng</a>
+                    <h3>Frontend Developer</h3>
+                </div>
+                <div class="icon-social">
+                    <a href="https://www.facebook.com/profile.php?id=100018001596603" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="about">
+                    <a href="about.html">
+                        <h3>introduce myself</h3>
+                        <i class="far fa-address-card"></i>
+                    </a>
+                </div>
+                <div class="contact">
+                    <button>follow me</button>
+                </div>
+                
+            </div>
+            <div class="colum">
+                <div class="logo">
+                    <img src="./img/unnamed.png" alt="">
+                </div>
+                <div class="content">
+                    <a href="https://www.arsenal.com/" target="_blank">Arsenal</a>
+                    <h3>My favorite football club</h3>
+                </div>
+                <div class="icon-social">
+                    <a href="https://www.facebook.com/profile.php?id=100018001596603" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="about">
+                    <a href="about.html">
+                        <h3>introduce myself</h3>
+                        <i class="far fa-address-card"></i>
+                    </a>
+                </div>
+                <div class="contact">
+                    <button>follow me</button>
+                </div>
+                
+            </div>
+            <div class="colum"></div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="close-btn">
+            <i class="fas fa-window-close"></i>
+        </div>
+        <div class="modal-img">
+            <img src="./img/logo.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        var btnOpen = document.querySelector('.logo');
+        var modalImg = document.querySelector('.modal');
+        var btnClose = document.querySelector('.close-btn i');
+        function showImg(){
+            modalImg.classList.add('show');
+        }
+        btnOpen.addEventListener('click',showImg);
+        function cancelImg(){
+            modalImg.classList.remove('show');
+        }
+        btnClose.addEventListener('click', cancelImg);
+        document.addEventListener('keydown', function(e){
+            if(e.keyCode==27){
+                modalImg.classList.remove('show');
+            }
+
+        });
+        
+    </script>
+</body>
+</html>
